@@ -37,7 +37,7 @@
       var cCache = new CanvasCache($('#caches'));
       var cachedItems = [];
 
-      var svgFiles = ['/images/svgs/building1.svg', '/images/svgs/building2.svg', '/images/svgs/building3.svg', '/images/svgs/building4.svg', '/images/svgs/cloud.svg'];
+      var svgFiles = ['http://santoshah.github.io/lastmilez/images/svgs/building1.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building2.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building3.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building4.svg', 'http://santoshah.github.io/lastmilez/images/svgs/cloud.svg'];
 
       for (i = 0; i < svgFiles.length; i++) {
             cachedItems[i] = cCache.newCanvas(1170, 700);
