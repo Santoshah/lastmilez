@@ -37,7 +37,8 @@
       var cCache = new CanvasCache($('#caches'));
       var cachedItems = [];
 
-      var svgFiles = ['http://localhost:8080/lastmilez/images/svgs/building1.svg', 'http://localhost:8080/lastmilez/images/svgs/building2.svg', 'http://localhost:8080/lastmilez/images/svgs/building3.svg', 'http://localhost:8080/lastmilez/images/svgs/building4.svg', 'http://localhost:8080/lastmilez/images/svgs/cloud.svg'];
+      var svgFiles = ['../images/svgs/building1.svg', '../images/svgs/building2.svg', '../images/svgs/building3.svg', '../images/svgs/building4.svg', '../images/svgs/cloud.svg'];
+      
       for (i = 0; i < svgFiles.length; i++) {
             cachedItems[i] = cCache.newCanvas(1170, 700);
             canvg(cachedItems[i].canvas, svgFiles[i]);
