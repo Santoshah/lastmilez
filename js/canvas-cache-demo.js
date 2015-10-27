@@ -38,6 +38,7 @@
       var cachedItems = [];
 
       var svgFiles = ['../images/svgs/building1.svg', '../images/svgs/building2.svg', '../images/svgs/building3.svg', '../images/svgs/building4.svg', '../images/svgs/cloud.svg'];
+      
       for (i = 0; i < svgFiles.length; i++) {
             cachedItems[i] = cCache.newCanvas(1170, 700);
             canvg(cachedItems[i].canvas, svgFiles[i]);
