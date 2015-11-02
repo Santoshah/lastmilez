@@ -6,10 +6,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.js"></script>	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/rgbcolor.js"></script>
-	<script type="text/javascript" src="js/canvg.js"></script>
+
 	
 
 
@@ -18,7 +15,7 @@
 <body>
 
 <!-- Static navbar -->
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="navss">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -27,32 +24,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">LastMilez</a>
+      
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav pull-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About us</a></li>
-        <li><a href="#about">Partner with us</a></li>
-        <li><a href="#about">APP Features</a></li>
-        <li><a href="#about">Careers</a></li>
-        <li><a href="#about">Contact us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#partner_with_us">Partner with us</a></li>
+        <li><a href="#app_features">APP Features</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact us</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>
 
 
-<div class="canvas_wrapper">
+<div class="canvas_wrapper" id="home">
 	<div class="logo">
 		<img src="images/logo.png" height="176" width="300" alt="">
 	</div>
 	<!-- /.logo -->
-<canvas id="canvas2" width="1170" height="384">*** THIS BROWSER DOES NOT SUPPORT THE CANVAS ELEMENT ***</canvas>
+<canvas id="canvas2" width="1600" height="384">*** THIS BROWSER DOES NOT SUPPORT THE CANVAS ELEMENT ***</canvas>
 </div>
 <!-- /.canvas_wrapper -->
-<div class="green_belt text-center">
+<div class="green_belt text-center" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -69,7 +65,7 @@
 </div>
 <!-- /.green_belt -->
 
-<div class="gray_belt text-center">
+<div class="gray_belt text-center" id="partner_with_us">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -108,7 +104,7 @@
 </div>
 <!-- /.gray_belt text-center -->
 
-<div class="green_belt">
+<div class="green_belt" id="app_features">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -136,7 +132,7 @@
 </div>
 <!-- /.green_belt -->
 
-<div class="gray_belt">
+<div class="gray_belt" id="careers">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -165,7 +161,11 @@
 							    <input type="text" class="form-control" placeholder="Enter City">
 							  </div>
 							  <div class="form-group">
-							    <input type="text" class="form-control" placeholder="Interested In:">
+							    <select name="" id="" class="form-control">
+							    	<option value="">Interested In:</option>
+							    	<option value="">Part Time</option>
+							    	<option value="">Full Time</option>
+							    </select>							    
 							  </div>
 						</div>
 						<!-- /.frm_sub_wrapper -->
@@ -194,7 +194,7 @@
 </div>
 <!-- /.gray_belt -->
 
-<div class="green_belt">
+<div class="green_belt" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -240,7 +240,13 @@
 	&copy; COPYRIGHT 2015 LASTMILEZ- ALL RIGHTS RESERVED
 </footer>
 <!-- /.footer -->
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.js"></script>	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/rgbcolor.js"></script>
+	<script type="text/javascript" src="js/canvg.js"></script>
 <script type="text/javascript" src="js/canvas-cache-demo.js"></script>	
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>	
+<script type="text/javascript" src="js/script.js"></script>	
+
 </body>
 </html>
