@@ -22,7 +22,7 @@
    var cacheCanvasDemo = function () {
 
       // Define vanishing point.
-      var originX = 1170 / 2,
+      var originX = 1600 / 2,
          originY = 700 / 2,
          rotation = 0,
          destSpeed = 0,
@@ -40,7 +40,7 @@
       var svgFiles = ['http://santoshah.github.io/lastmilez/images/svgs/building1.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building2.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building3.svg', 'http://santoshah.github.io/lastmilez/images/svgs/building4.svg', 'http://santoshah.github.io/lastmilez/images/svgs/cloud.svg'];
 
       for (i = 0; i < svgFiles.length; i++) {
-            cachedItems[i] = cCache.newCanvas(1170, 700);
+            cachedItems[i] = cCache.newCanvas(1600, 700);
             canvg(cachedItems[i].canvas, svgFiles[i]);
          }
 
@@ -162,7 +162,7 @@
          });
       // Move everything back to middle if mouse out.
       $canvas.bind('mouseout', null, function (event) {
-            destOriginX = 1170 / 2;
+            destOriginX = 1600 / 2;
             destOriginY = 600 / 2;
             destRotation = 0;
             destSpeed = 0;
