@@ -161,4 +161,6 @@ canvas {
   
   #contact { text-align: center; }
   .box_title { padding-left: 0; }
+  .nav.navbar-nav.pull-right { width: 100%; }
+  .navbar-nav>li>a {     line-height: 20px; }
 }
