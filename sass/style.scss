@@ -1,6 +1,6 @@
 
 @import "compass";
-body {   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;     padding-top: 51px; }
+body {   font-family: 'Open Sans', sans-serif; padding-top: 51px; }
 p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  }
 .navbar-default { background-color: #ff4a93; border-color: #ff4a93; }
 .navbar-default .navbar-nav>li>a { color: #fff; @include transition(all ease-in-out 0.5s); }
@@ -23,17 +23,17 @@ p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  }
   p { color: #fff; font-size: 18px; font-weight: normal;  }
   h2 { font-weight: normal; color: #fff;  padding:10px 0 30px; }
 }
-@for $i from 1 through 6 {
-  h#{$i} {
-    @extend %heading;
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     @extend %heading;
     
-  }
-}
+//   }
+// }
 %heading {
-  font-family: "Georgia";
+  // font-family: "Georgia";
 }
 h1 {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  // 
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -41,7 +41,7 @@ h1 {
   line-height: 26.4px;
 }
 h3 {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  // 
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -49,7 +49,7 @@ h3 {
   line-height: 15.4px;
 }
 p {
-  // font-family: Georgia, Times, 'Times New Roman', serif;
+  // 
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -57,7 +57,7 @@ p {
   line-height: 20px;
 }
 blockquote {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  
   font-size: 21px;
   font-style: normal;
   font-variant: normal;
@@ -65,7 +65,7 @@ blockquote {
   line-height: 30px;
 }
 pre {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
@@ -75,11 +75,11 @@ pre {
 
 .gray_belt { background: #dadfe2; padding-bottom: 40px;
   h3 { color: #ff4a93; font-size: 21px; font-weight: bold; }
-  p { color: #0a6963; font-size: 21px; font-family: "Times New Roman", Times, Baskerville, Georgia, serif; font-weight: bold;}
+  p { color: #0a6963; font-size: 20px; font-weight: bold;}
 }
 .box_border { margin-top: 30px; border: 1px solid #000; padding-bottom: 20px;}
 .custom_list {
-  li { color: #fff; text-align: left; font-size: 28px; line-height: 68px; list-style: none; }
+  li { color: #fff; text-align: left; font-size: 20px; line-height: 38px; list-style: none; }
 }
 .gray_belt {
   .custom_list {
@@ -87,11 +87,11 @@ pre {
   }
 }
 
-  .green_dot ,.pink_dop { background: #ff4a93; width: 18px; margin-right: 17px; height: 18px; float: left; @include border-radius(20px); margin-top: 24px; }
+  .green_dot ,.pink_dop { background: #ff4a93; width: 18px; margin-right: 17px; height: 18px; float: left; @include border-radius(20px); margin-top: 9px; }
   .green_dot { background: #0a6963; }
 
 .frm_wraper { }
-.form-control {   font-size: 24px;  height: 67px; color: #ff4a93; background:transparent; border: 1px solid #000; border-left: 0; border-right: 0; @include border-radius(0); } 
+.form-control {   font-size: 16px;  height: auto; color: #ff4a93; background:transparent; border: 1px solid #000; border-left: 0; border-right: 0; @include border-radius(0); } 
 .form-group { margin-bottom: 2px;
   &:first-child {
     .form-control {  border-top: 0; }
@@ -111,7 +111,7 @@ pre {
 
 input.form-control { @include placeholder {
     color: #ff4a93;
-    font-size: 24px;
+    font-size: 16px;
 }}
 .frm_sub_wrapper { border: 1px solid #000;  @include border-radius(20px);  }
 
@@ -130,7 +130,7 @@ input.form-control { @include placeholder {
   a { color: #fff; font-size: 22px;}
 }
 .canvas_wrapper { text-align: center; background: #dadfe2; position: relative;
-  &:hover { cursor: url(../images/mec15.cur), auto;}
+  &:hover { cursor: url(../images/bike.png), auto;}
   canvas { margin: 0 auto; opacity: 0.5; }
 }
 .logo { pointer-events: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;
@@ -165,4 +165,16 @@ canvas {
   .box_title { padding-left: 0; }
   .nav.navbar-nav.pull-right { width: 100%; }
   .navbar-nav>li>a {     line-height: 20px; }
+}
+
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111;  font-family: 'Helvetica Neue', sans-serif;  font-size: 30px; font-weight: 300; line-height: 32px; text-align: center; }
+
+
+p { color: #685206;  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
+ul, ol {
+  li {  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
 }
