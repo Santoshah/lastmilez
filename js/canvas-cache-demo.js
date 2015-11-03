@@ -23,7 +23,7 @@
 
       // Define vanishing point.
       var originX = 1600 / 2,
-         originY = 700 / 2,
+         originY = 600 / 2,
          rotation = 0,
          destSpeed = 0,
          speed = 0,
