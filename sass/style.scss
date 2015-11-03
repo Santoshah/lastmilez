@@ -1,13 +1,19 @@
 
 @import "compass";
 body {   font-family: 'Open Sans', sans-serif; padding-top: 51px; }
-p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  }
+p { color: #685206;  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
 .navbar-default { background-color: #ff4a93; border-color: #ff4a93; }
 .navbar-default .navbar-nav>li>a { color: #fff; @include transition(all ease-in-out 0.5s); }
 .navbar-default .navbar-brand { color: #fff; }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: #FFF;
   background-color: #E23E80;
+}
+h1 { color: #111; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+h2 { color: #111; line-height: 32px; text-align: center; }
+ul, ol {
+  li {  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
 }
 .navbar { margin-bottom: 0; }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {background-color: #E23E80;  color: #FFF; }
@@ -20,7 +26,7 @@ p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  }
 }
 
 .green_belt { background: #0a6963; padding:0 0 20px;
-  p { color: #fff; font-size: 18px; font-weight: normal;  }
+  p { color: #fff; font-size: 15px; line-height: 15px;  font-weight: normal;  }
   h2 { font-weight: normal; color: #fff;  padding:10px 0 30px; }
 }
 @for $i from 1 through 6 {
@@ -31,14 +37,14 @@ p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  }
 }
 %heading {
  text-transform: uppercase;
- font-size: 24px;
+ font-size: 22px;
 }
 h1 {
   // 
   // font-size: 24px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
+  // font-weight: 500;
   line-height: 26.4px;
 }
 h3 {
@@ -46,7 +52,7 @@ h3 {
   // font-size: 14px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
+  // font-weight: 500;
   line-height: 15.4px;
 }
 p {
@@ -54,7 +60,7 @@ p {
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  // font-weight: 400;
   line-height: 20px;
 }
 blockquote {
@@ -75,8 +81,8 @@ pre {
 }
 
 .gray_belt { background: #dadfe2; padding-bottom: 40px;
-  h3 { color: #ff4a93; font-size: 21px; font-weight: bold; }
-  p { color: #0a6963; font-size: 20px; font-weight: bold;}
+  h3 { color: #ff4a93; font-size: 18px; font-weight: bold; }
+  p { color: #0a6963; font-size: 16px; font-weight: bold;}
 }
 .box_border { margin-top: 30px; border: 1px solid #000; padding-bottom: 20px;}
 .custom_list {
@@ -87,13 +93,15 @@ pre {
     li { color: #4e4a4b; }
   }
 }
-
-  .green_dot ,.pink_dop { background: #ff4a93; width: 18px; margin-right: 17px; height: 18px; float: left; @include border-radius(20px); margin-top: 9px; }
+#app_features .custom_list {
+  padding-top: 20%; 
+}
+  .green_dot ,.pink_dop { background: #ff4a93; width: 12px; margin-right: 17px; height: 12px; float: left; @include border-radius(20px); margin-top: 14px; }
   .green_dot { background: #0a6963; }
 
 .frm_wraper { }
-.form-control {   font-size: 16px;  height: auto; color: #ff4a93; background:transparent; border: 1px solid #000; border-left: 0; border-right: 0; @include border-radius(0); } 
-.form-group { margin-bottom: 2px;
+.form-control {   font-size: 16px;  height: auto; color: #ff4a93; padding: 10px ; background:transparent; border: 1px solid #000; border-bottom: 0; border-left: 0; border-right: 0; @include border-radius(0); } 
+.form-group { margin-bottom: 0;
   &:first-child {
     .form-control {  border-top: 0; }
   }
@@ -114,21 +122,20 @@ input.form-control { @include placeholder {
     color: #ff4a93;
     font-size: 16px;
 }}
-.frm_sub_wrapper { border: 1px solid #000;  @include border-radius(20px);  }
+.frm_sub_wrapper { border: 1px solid #000;      width: 82%; @include border-radius(20px);  }
 
 .btn-default {
     color: #ff4a93;
     background-color: transparent;
     border-color: #000;
-    font-size: 24px;
-    padding: 10px 25px;
-    margin-left: 20%;
-    margin-top: 30px;
+    font-size: 14px;
+    padding: 10px 30px;
+    margin: 30px 0 0 32%;
 }
 .footer { background: #ff4a93; padding: 15px 0; color: #fff; }
-.box_title { color: #fff; font-size: 26px; padding-bottom: 20px; padding-left: 30px;     }
-.descript { color: #fff; font-size: 22px; margin-bottom: 20px;
-  a { color: #fff; font-size: 22px;}
+.box_title { color: #fff; font-size: 20px; padding-bottom: 10px; padding-left: 0; text-align: center;   text-transform: uppercase;  }
+.descript {  text-align: center; color: #fff; font-size: 16px; margin-bottom: 20px;
+  a { color: #fff; font-size: 16px;}
 }
 .canvas_wrapper { text-align: center; background: #dadfe2; position: relative;
   &:hover { cursor: url(../images/bike.png), auto;}
@@ -169,13 +176,6 @@ canvas {
 }
 
 
-h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
-
-
-h2 { color: #111;  font-family: 'Helvetica Neue', sans-serif;  font-weight: 300; line-height: 32px; text-align: center; }
-
-
-p { color: #685206;  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
-ul, ol {
-  li {  font-family: 'Open Sans', sans-serif;font-size: 14px; line-height: 24px;  }
+#careers {
+  background: #DADFE2 url(../images/join-our-team1.png) left top no-repeat;
 }
